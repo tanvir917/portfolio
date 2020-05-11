@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
+import Projects from './Projects';
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = { displayBio: false };
-        console.log(this);
-        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-        //bind allow us to pass this object from one object to another 
-    }
+    state = { displayBio: false };
 
-    toggleDisplayBio() {
+    toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio })
     }
 
@@ -33,6 +28,8 @@ class App extends Component {
                         </div>
                     )
                 }
+                <hr/>
+                <Projects/>
             </div>
         )
     }
