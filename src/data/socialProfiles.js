@@ -15,12 +15,12 @@ const SOCIAL_PROFILES = [
         image: githubIcon
     },
     {
-        id: 1,
+        id: 3,
         link: 'https://www.linkedin.com/in/tanvir-islam-689b181a9/',
         image: linkedinIcon
     },
     {
-        id: 1,
+        id: 4,
         link: 'https://twitter.com/tanvir917',
         image: twitterIcon
     }
