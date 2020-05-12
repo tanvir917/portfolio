@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "core-js": "^2.6.11",
     "live-server": "^1.2.1",
     "parcel-bundler": "^1.10.3",
     "react": "^16.13.1",
