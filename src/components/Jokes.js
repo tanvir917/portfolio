@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 const Joke = ({ joke : { setup, punchline } }) => {
     //const { setup, punchline } = joke;
@@ -14,7 +15,8 @@ class Jokes extends Component {
             .then(json => {
                 console.log('json', json);
                 this.setState({ joke: json })
-            });
+            })
+            .catch(error => alert(error.message));
     }
 
     fetchJokes = () => {
@@ -23,12 +25,14 @@ class Jokes extends Component {
             .then(json => {
                 console.log('json', json);
                 this.setState({ jokes: json })
-            });
+            })
+            .catch(error => alert(error.message));
     }
 
     render() {
         return(
             <div>
+                <Header/>
                 <h2>Highlighted Joke</h2>
                 <Joke joke={this.state.joke}/>
                 <hr/>
